@@ -1,0 +1,1432 @@
+@font-face {
+    font-weight: normal;
+    font-family: 'RobotoLight';
+    src: url(fonts/RobotoLight.ttf);
+}
+@font-face {
+    font-weight: bold;
+    font-family: 'RobotoBold';
+    src: url(fonts/RobotoBold.ttf);
+}
+@font-face {
+    font-weight: normal;
+    font-family: 'RobotoMedium';
+    src: url(fonts/RobotoMedium.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#wrapper{
+	width: 100%;
+	margin: 0 auto;
+}
+ header{
+	max-width: 1870px;
+	height: 5.5625em;
+	margin: 0 auto;
+	background:rgba(0, 36, 71, .79);
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+header div.logo{
+	width: 13.75em;
+	height: 3.9375em;
+	margin-right: 3.5em;
+	background: url(img/logo.png) center center no-repeat;
+	background-size: contain;
+}
+nav input{
+	display: none;
+}
+nav button{
+	display: inline-block;
+	background: transparent;
+	border: none;
+	padding: 0 0.64em  ;
+	border-right:1px solid #2a94fb;
+	font: 1em RobotoLight, arial, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#2a94fb;
+	cursor: pointer;
+}
+nav button:nth-of-type(5){
+	display: inline-block;
+}
+nav button:nth-of-type(6),
+nav button:nth-of-type(7){
+	display: none;
+}
+nav button:last-child{
+	border-right:none;
+}
+nav button.active, nav button:hover{
+	color:#fff;
+}
+.first{
+	max-width: 1870px;
+	margin: 0 auto;
+	height: 72em;
+	margin-top: -5.5625em;
+	z-index: -1;
+	position: relative;
+	background: url(img/header-image.jpg)  top center no-repeat;
+	background-size: 116.875em 72em;
+}
+.second div.container, .third div.container,
+.fifth  div.container,
+.sixth  div.container, .seventh  div.container{
+	max-width: 59.0625em;
+	margin: 0 auto;
+	padding:4.2em 0.3125em 0; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.first div.container{
+	max-width: 59.0625em;
+	margin: 0 auto;
+	padding:5em 0.3125em 0;
+}
+.first div.text{
+	margin-top: 27.5em;
+	padding: 1.6em 0em 1.375em 2.25em;
+	background: rgba(0, 127, 255, .75);
+}
+.first div.text h2{
+	font: 4.5em RobotoBold, arial, sans-serif;
+	color:white;
+}
+.first div.text p{
+	font:3.125em RobotoLight, arial, sans-serif;
+	color:white;
+}
+.first  div.container button{
+	position: absolute;
+	top:89%;
+	left: calc(50% - 5em);
+	width: 8em;
+	height: 8em;
+	border: none;
+	background: url(img/button.png) center center no-repeat;
+	cursor: pointer;
+}
+.second{
+	background: #fff;
+}
+.second h2, .third h2, .fourth  h2,
+.fifth  h2, .sixth  h2, .seventh h2{
+	font:3.75em RobotoLight, arial, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	color:#363636;
+}
+.pulse{
+	width: 20.3125em;
+	height: 1.625em;
+	margin: 2em auto 3em;
+	background: url(img/pulse.png) 0 0 no-repeat;
+}
+.second div.container div.text,
+.third div.container div.text{
+	margin-bottom: 5em;
+	background: #3e9eff;
+}
+.second div.container div.text p,
+.third div.container div.text p,
+.sixth div.container div.text p{
+	margin: 1em;
+	font:1.75em RobotoBold, arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color:#fff;
+}
+.second div.container div.text p:first-child{
+	padding-bottom: 0.7em;
+	border-bottom: 1px solid #fff;
+}
+.second div.container div:nth-of-type(3),
+.second div.container div:nth-of-type(4),
+.second div.container div:nth-of-type(5){
+	border-bottom: 1px solid #dcdcdc;
+	width: 100%;
+	padding: 2.4em 0em 0.7em;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+.second div.container div:nth-of-type(3){
+	padding-bottom: 4em;
+}
+.second div.container div:nth-of-type(5){
+	padding-bottom: 2.1em;
+	border-bottom: none;
+}
+ .second div.image-one{
+ 	display: inline-block;
+ 	width: 33.25em;
+ 	height: 12.3125em;
+	background: url(img/tablets.png) center center no-repeat;
+	background-size: 100%;
+}
+ .second div.image-two{
+	display: inline-block;
+ 	width: 50%;
+ 	height: 21.5em;
+	background: url(img/pazl.jpg) center center no-repeat;
+	background-size: 100%;
+	order:1;
+ }
+ .second div.image-three{
+ 	display: inline-block;
+ 	width: 30.125em;
+ 	height: 20.4375em;
+	background: url(img/cloud.jpg) center center no-repeat;
+	background-size: 100%;
+}
+.second div.container div:nth-of-type(3) p,
+.second div.container div:nth-of-type(4) p,
+.second div.container div:nth-of-type(5) p{
+	width: 30%;
+	padding: 0em 0.5em 0em 1.5em;
+	font:1.875em RobotoLight, arial, sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+	color:#000;
+	flex:1 1 250px;
+}
+.second div.container div:nth-of-type(3) p:after,
+.second div.container div:nth-of-type(4) p:after,
+.second div.container div:nth-of-type(5) p:after{
+	content: ' of the printing and typeset- ting industry.';
+}
+.third{
+	max-width: 1870px;
+	margin: 0 auto;
+	background: #f6f8fb;
+} 
+.third div.container{
+	max-width: 1031px;
+}
+.third div.container div.text{
+	margin-left: 2.1em;
+	margin-right: 2.1em;
+}
+.third div.container div.text p{
+	margin: 2.5em 1.3125em;
+}
+.third div.container-second{
+	margin-bottom: 6.25em;   
+	width: 100%;
+	padding-bottom: 67.12%;
+	background: url(img/section-third-grid.png) top center no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+.third div.element-one{
+	position: absolute;
+	top:12.2%;
+	left: 6.7%;
+	width: 21%;
+	height: 32%;
+	transform: rotate(45deg);
+}
+.third div.element-two{
+	position: absolute;
+	top:12.2%;
+	left: 39.9%;
+	width: 21%;
+	height: 32%;
+	transform: rotate(45deg);
+}
+.third div.element-three{
+	position: absolute;
+	top:12.2%;
+	left: 72.9%;
+	width: 21%;
+	height: 32%;
+	transform: rotate(45deg);
+}
+.third div.element-four{
+	position: absolute;
+	top:36.9%;
+	left: 23.5%;
+	width: 21%;
+	height: 32%;
+	transform: rotate(45deg);
+}
+.third div.element-five{
+	position: absolute;
+	top:36.9%;
+	left: 56.4%;
+	width: 21%;
+	height: 32%; 
+	transform: rotate(45deg);
+}
+.third div.element-six{
+	position: absolute;
+	top:61.4%;
+	left: 39.9%;
+	width: 21%;
+	height: 32%;
+	transform: rotate(45deg);
+}
+.third button{
+	border: transparent;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	transform: rotate(-90deg);
+	position: relative;
+	cursor: pointer;
+	transition: all .3s;
+}
+.third button.one{
+	background: url(img/section-third1.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.third button.two{
+	background: url(img/section-third2.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.third button.three{
+	background: url(img/section-third3.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.third button.four{
+	background: url(img/section-third4.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.third button.five{
+	background: url(img/section-third5.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.third button.six{
+	background: url(img/section-third6.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.third button.one:hover{
+	background: url(img/section-third1-hover.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.third button.two:hover{
+	background: url(img/section-third2-hover.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.third button.three:hover{
+	background: url(img/section-third3-hover.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.third button.four:hover{
+	background: url(img/section-third4-hover.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.third button.five:hover{
+	background: url(img/section-third5-hover.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.third button.six:hover{
+	background: url(img/section-third6-hover.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.third button span{
+	position: absolute;
+	display: inline-block;
+	top: 71.1%;
+	left: 0.5%;
+	font:1.9em RobotoLight, arial, sans-serif;
+	text-transform: uppercase;
+	color: #444;
+	transform: rotate(45deg);
+}
+.fourth{
+	max-width: 1870px;
+	margin: 0 auto;
+	background: #fff url(img/section-four.png)  center bottom no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	position: relative;
+}
+.fourth div.container{
+	max-width: 1410px;
+	margin: 0 auto;
+	padding:4.5em 5px 45%;
+}
+.fourth div.button{
+	padding-top: 0em; 
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.fourth div.button button{
+	width: 25em;
+	margin: 0 0.5% 1.875em;
+	padding: 1em 0em; 
+	border:none;
+	background: none;
+	font:1.75em RobotoBold,arial, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: #3b9dff;
+	cursor: pointer;
+}
+.fourth div.button button.one{
+	border: 1px solid #3b3b3b;
+}
+.fourth div.button button.two{
+	font-size: 2.3em;
+	color:#000;
+}
+.fourth div.button button.three{
+	background: rgba(102, 178, 255, .77);
+}
+.fourth div.window{
+	position: absolute;
+	top:46%;
+	left:3%;
+	width: 94%; 
+	padding: 1em 0em 2em;
+	background: rgba(255, 255, 255, .9);
+	box-shadow: 0 0 3px rgba(0, 0, 0, .45); 
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+.fourth div.window button.close{
+	width: 1.2em;
+	height: 1.2em;
+	margin-left: calc(100% - 2.2em - 1.3%);
+	border: none;
+	background: none;
+	background: url(img/close.png) 0 0 no-repeat;
+	background-size: auto;
+	cursor: pointer;
+}
+.fourth div.window form{
+	margin-top: -1em;
+}
+.fourth div.window input,
+.fourth div.window div.checkbox{
+	width:45%;
+	height:2.5em;
+	margin: 2.3%;
+	padding: 0.8em;
+	border: 1px solid #000;
+	background: transparent;
+	font: 1.5em RobotoBlack, arial, sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.fourth div.window div.checkbox{
+	display: inline-block;
+	border:none;
+	padding-right: 0em;
+	position: relative;
+	padding: 0.5em;
+}
+.fourth div.window div.checkbox span{
+	display: inline-block;
+	width: 100%;
+	padding-right: 3em;
+	font: 1em RobotoMedium, arial, sans-serif;
+	text-transform: uppercase;
+	text-align: right;
+}
+.fourth div.window div.checkbox label{
+	display: inline-block;
+	position: absolute;
+	top:calc(50% - 2.2em);
+	right: 0;
+	width: 3em;
+	height: 3em;
+} 
+.fourth div.window div.checkbox input.checkbox{
+	position: absolute;
+	top:calc(50% - 0.5em);
+	right: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	opacity: 0;
+}
+.fourth div.window div.checkbox input.checkbox + span{
+	display: inline-block;
+	position: absolute;
+	top:calc(50% - 0.8em);
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: url(img/checkbox-unchecked.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.fourth div.window div.checkbox input.checkbox:checked + span{
+	background: url(img/checkbox-checked.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.fourth div.window button{
+	width: 7.8em;
+	height: 2em;
+	margin-left: calc(100% - 8em - 2.3%);
+	margin-bottom: 0em;
+	border: none;
+	background: #3b9dff;
+	font:1.75em RobotoBold,arial, sans-serif;
+	text-transform: uppercase;
+	color:#fff;
+}
+.fifth{
+	max-width: 1870px;
+	margin: 0 auto;
+	background: #f6f8fb;
+}
+.fifth div.news1,
+.fifth div.news2,
+.fifth div.news3{
+	width: 100%;
+	height: 22.5em;
+	margin-bottom: 2.5em;
+	background: url(img/section-five-grid.png) center center no-repeat;
+	background-size: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.fifth div.news1 div,
+.fifth div.news2 div,
+.fifth div.news3 div{
+	width: 33%;
+	padding:2.5em 0.3em;
+}
+.fifth div.news1 div.image{
+	background: url(img/news1.jpg) center center no-repeat;
+	background-size: 95%;
+}
+.fifth div.news2 div.image{
+	background: url(img/news2.jpg)  center center no-repeat;
+	background-size: 95%;
+	order:1;
+}
+.fifth div.news3 div.image{
+	background: url(img/news3.jpg) center center no-repeat;
+	background-size: 95%;
+}
+.fifth div h3{
+	margin-bottom: 3.5em;
+	font:1.75em RobotoMedium, arial, sans-serif;
+	text-transform: uppercase;
+}
+.fifth p{
+	font:1.125em RobotoLight, arial, sans-serif;
+}
+.fifth div.news1 div:nth-of-type(1) p,
+.fifth div.news3 div:nth-of-type(1) p,
+.fifth div.news1 div:nth-of-type(1) h3,
+.fifth div.news3 div:nth-of-type(1) h3{
+	padding-right: 0.5em; 
+	text-align: right;
+}
+.fifth div.news2 div:nth-of-type(1){
+	order: 3;
+}
+.fifth div.news2 div:nth-of-type(2){
+	order: 2;
+}
+.fifth div.news1 div:nth-of-type(1) p:after,
+.fifth div.news3 div:nth-of-type(1) p:after{
+	content: ' ';
+	display: inline-block;
+	width: 35px;
+	height: 21px;
+	background: url(img/section-five-icon.png) 15px 0px no-repeat;
+}
+.fifth div.news2 div:nth-of-type(1) p:before{
+	content: ' ';
+	display: inline-block;
+	width: 35px;
+	height: 21px;
+	background: url(img/section-five-icon.png) 2px 0px no-repeat;
+}
+.fifth div.news1 div:nth-of-type(2) p,
+.fifth div.news2 div:nth-of-type(2) p,
+.fifth div.news3 div:nth-of-type(2) p{
+	font-size: 1.25em;
+}
+.sixth{
+	max-width: 1870px;
+	margin: 0 auto;
+	background: url(img/notebook.jpg) center top no-repeat;
+	background-size: auto 100%;
+}
+.sixth .pulse{
+	margin-bottom: 1.5em;
+}
+.sixth div.container div.text{
+	margin-bottom: 0em;
+	background: #3e9eff;
+}
+.sixth div.container div.text p{
+	margin: 0.7em;
+}
+.sixth div.container div.text p:first-child{
+	padding-bottom: 0.6em;
+	border-bottom: 1px solid #fff;
+}
+.sixth .form-wrapper{
+	width: 100%;
+	margin: 3em auto 4.3em;
+}
+.sixth form{
+	width: 100%;
+	margin-top: 3.2em;
+	display: flex;
+	flex-flow: row wrap;
+}
+.sixth form input,
+.sixth form textarea{
+	border: 1px solid #525252;
+	background: transparent;
+	font: 1.5em RobotoMedium, arial, sans-serif;
+	text-transform: uppercase;
+	color:#373737;
+}
+::-webkit-input-placeholder {
+	color:#373737;
+}
+.sixth form input{
+	width: 47.5%;
+	margin-bottom: 1.3em;
+	padding: 0.4em;
+	flex: 1 1 336px;
+}
+.sixth form input:first-child{
+	margin-right: 1.3em;
+}
+.sixth form textarea{
+	height: 7.1em; 
+	margin: 0 auto 1.3em;
+	padding: 0.5em;
+	flex-basis:100%;
+}
+.sixth form button,
+.seventh form button{
+	width: 9em;
+	height: 2.1em;
+	margin-left: calc(100% - 9em);
+	border: none;
+	background: #3b9cfe;
+	font: 1.5em RobotoBold, arial, sans-serif;
+	text-transform: uppercase;
+	color:#fff;
+	cursor: pointer;
+	
+}
+.seventh{
+	max-width: 1870px;
+	margin: 0 auto;
+	background: url(img/city.jpg) top center no-repeat;
+	background-size: auto 100%;
+}
+.seventh  div.container{
+	padding-top: 5em;
+}
+.seventh  div.container p{
+	padding: 1em 0em 0.3em;
+}
+.seventh  div.container p:nth-of-type(2):after{
+	display:block;
+	width: 9em;
+	margin: 0 auto;
+	content: 'Lorem Ipsum is simply dummy text';
+}
+.seventh div.form-wrapper{
+	width: 100%;
+	margin: 3em auto 3.75em;
+}
+.seventh h3{
+	font: 1.75em RobotoBold, arial, sans-serif;
+	text-align: center;
+}
+.seventh p{
+	font: 1.75em RobotoLight, arial, sans-serif;
+	text-align: center;
+}
+.seventh p:nth-of-type(1):after{
+	content:' typesetting industry.';
+}
+.seventh p:nth-of-type(2):after{
+	content:' text';
+}
+.seventh div.column{
+	width: 100%;
+	padding-top: 2.8em;
+	display: flex;
+	flex-flow: row wrap;
+}
+.seventh div.left,
+.seventh div.right{
+	flex: 1 1 336px;
+}
+.seventh div.left{
+	position: relative;
+}
+.seventh div.left h3{
+	margin-top: 1.125em;
+	margin-bottom: 9.5em; 
+	padding-left: 3em;
+	font-size: 2.25em;
+	text-transform: uppercase;
+	text-align: left;
+}
+.seventh div.left h3:after{
+	content:' ipsum';
+}
+.seventh div.map{
+	position: absolute;
+	top:-3%;
+	right: 5%;
+	width: 100%;
+	height: 100%;
+	background: url(img/estonia.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+
+.seventh form input{
+	display: block;
+	width: 100%;
+	height:2.2em;
+	margin-bottom: 1em;
+	padding: 0.5em;
+	border: 1px solid #525252;
+	background: transparent;
+	font: 1.5em RobotoBlack, arial, sans-serif;
+	text-transform: uppercase;
+	color:#373737;
+}
+.seventh form input:nth-of-type(3){
+	margin-bottom: 3em;
+}
+.seventh form div.checkbox{
+	padding: 1.3em 0em 2.5em 3em;
+}
+.seventh form div.checkbox span{
+	display: inline-block;
+	font: 1.5em RobotoMedium, arial, sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+	padding-right: 2em;
+}
+.seventh form div.checkbox label{
+	display: block;
+	position: relative;
+}
+.seventh form input.checkbox{
+	position: absolute;
+	top:-0.2em;
+	right: 0;
+	width: 1.7em;
+	height: 1.7em;
+	margin-bottom: 0em;
+	opacity: 0;
+}
+.seventh form input.checkbox + span{
+	display: block;
+	position: absolute;
+	top:-0.2em;
+	right: 0;
+	width: 1.7em;
+	height: 1.7em;
+	background: url(img/checkbox-unchecked.png) 0 0 no-repeat;
+
+}
+.seventh form input.checkbox:checked + span{
+	background: url(img/checkbox-checked.png) 0 0 no-repeat;
+	
+}
+.seventh div.social-network{
+	margin-bottom: 3.1em;
+}
+.seventh button{
+	width: 3.5em;
+	height: 3.5em;
+	border:none;
+	margin: 0 0.2em;
+	cursor: pointer;
+}
+.seventh button.facebook{
+	background: url(img/facebook.png) 0 0 no-repeat;
+}
+.seventh button.twitter{
+	background: url(img/twitter.png) 0 0 no-repeat;
+}
+.seventh button.google{
+	background: url(img/google+.png) 0 0 no-repeat;
+}
+.seventh button.linkedin{
+	background: url(img/linkedin.png) 0 0 no-repeat;
+}
+.seventh button.skynetwork{
+	background: url(img/skynetwork.png) 0 0 no-repeat;
+}
+footer{
+	max-width: 1870px;
+	margin: 0 auto;
+	height: 5.9em;
+	background:#363636;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+footer p{
+	padding-left: 1em;
+	padding-right: 1em;
+	font:1.125em RobotoLight,arial,sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+}
+footer p:before{
+	content: 'Lorem Ipsum is simply dummy text of the printing and ';
+}
+footer button, footer p a{
+	background: none;
+	border: none;
+	font:1em RobotoLight,arial,sans-serif;
+	text-transform: lowercase;
+	text-decoration: underline;
+	color:#1a68e9;
+	cursor: pointer;
+}
+footer button:after{
+	content: ' typesetting industry.';
+}
+footer button:hover,footer p a:hover{
+	color:yellow;
+	text-decoration: none;
+}
+/****************************************/
+@media only screen and (max-width: 500px){
+	.first div.text{
+		margin-top: 14em;
+	}
+	.third button span{
+		top: 65%;
+		left: -6.5%;
+		font-size: .8em;
+	}
+}
+@media only screen and (max-width: 700px){
+	.second div.container div:nth-of-type(4){
+		flex-flow: column wrap;
+	}
+	.second div.image-two{
+		flex:1 1 220px;	
+		order:-1;
+	}
+	.second div.container div:nth-of-type(4) p{
+		width: 100%;
+		flex:1 1 130px;	
+	}
+	.third button span{
+		top: 69%;
+		left: -2.5%;
+		font-size: 1.3em;
+	}
+	.fourth div.button{
+		flex-flow: column nowrap;
+	}
+	.fourth div.button button{
+		width: 95%;
+		margin-bottom: 0.3em;
+	}
+	.fourth div.window{
+		top:20%;
+	}
+	.fourth div.window input,
+	.fourth div.window div.checkbox{
+		width:95%;
+	}
+	.fifth div.news1 div,
+	.fifth div.news2 div,
+	.fifth div.news3 div{
+		padding:9em 0.3em;
+	}
+	.fifth div h3{
+		margin-bottom: 0em;
+		font:0.8em RobotoMedium, arial, sans-serif;
+		text-transform: uppercase;
+	}
+	.fifth p{
+		font:0.5em RobotoLight, arial, sans-serif;
+		line-height: 0.5em;
+	}
+	.fifth div.news1 div:nth-of-type(1) p,
+	.fifth div.news3 div:nth-of-type(1) p,
+	.fifth div.news1 div:nth-of-type(1) h3,
+	.fifth div.news3 div:nth-of-type(1) h3{
+		padding-right: 0.5em; 
+		text-align: right;
+	}
+	.sixth form input:first-child{
+		margin-right: 0em;
+	}
+	.seventh div.left h3{
+		margin-bottom: 56%; 
+		padding-left: 0em;
+		text-align: center;
+	}
+	.seventh div.map{
+		top:-10%;
+		right: 0%;
+		width: 100%;
+		height: 100%;
+		background: url(img/estonia.png) top center  no-repeat;
+		background-size:100% ;
+	}
+	.seventh form input, 
+	.seventh form div.checkbox{
+		width: 90%;
+		margin: 0 auto 1em;
+	}
+	.seventh form button{
+		margin-left: calc(100% - 9em - 5%);
+	}
+}
+@media only screen and (max-width: 850px){
+	.third button span{
+		top: 66%;
+		left: 1.5%;
+		font-size: 1.6em;
+	}
+	.fifth div.news1 div,
+	.fifth div.news2 div,
+	.fifth div.news3 div{
+		padding:5em 0.3em;
+	}
+	.fifth div h3{
+		margin-bottom: 1.5em;
+		font:1.5em RobotoMedium, arial, sans-serif;
+		text-transform: uppercase;
+	}
+	.fifth p{
+		font:1em RobotoLight, arial, sans-serif;
+	}
+	.fifth div.news1 div:nth-of-type(1) p,
+	.fifth div.news3 div:nth-of-type(1) p,
+	.fifth div.news1 div:nth-of-type(1) h3,
+	.fifth div.news3 div:nth-of-type(1) h3{
+		padding-right: 0.5em; 
+		text-align: right;
+	}
+}
+/**********    Mobile    **********/
+@media (max-device-width: 340px) and (orientation: portrait){
+	header{
+		width: 100%;
+		height: 1.8125em;
+		padding: 0em 1.4375em;
+		background:rgba(0, 0, 0, .79);
+		position: relative;
+		justify-content: space-between;
+
+	}
+	header div.logo{
+		width: 74px;
+		height: 21px;
+		background: url(img-mobile/logo-mobile.png) 0 0 no-repeat;
+		}
+	nav{
+		height: 1.8125em;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	nav label{
+		width: 14px;
+		height: 7px;
+		display: block;
+		background: url(img-mobile/navigation-mobile.png) 0 0 no-repeat;
+	}
+	nav input{
+		width: 100%;
+		height: 100%;
+	}
+	nav input:checked + span{
+		display: block;
+	}
+	nav span{
+		display: none;
+		position: absolute;
+		top:1.8125em;
+		left:0;
+		width: 100%;
+		background:rgba(0, 0, 0, .79);
+	}
+	nav button{
+		margin-left: 6.6%;
+		width: 86.8%;
+		padding: 0.8em  0.3em;
+		border-right:none;
+		border-bottom: 1px solid rgba(1, 124, 249, .25);
+		font: 0.75em RobotoMedium, arial, sans-serif;
+		text-align: left;
+		text-decoration: none;
+		text-transform: uppercase;
+		color:#2775cd;
+		cursor: pointer;
+	}
+	nav button:nth-of-type(5){
+		display: none;
+	}
+	nav button:nth-of-type(6),
+	nav button:nth-of-type(7){
+		display: block;
+	}
+	nav button:last-child{
+		border-right:none;
+		border-bottom: none;
+	}
+	nav button.active, nav button:hover{
+		color:#fff;
+	} 
+	.first{
+		margin-top: -1.8125em ;
+		z-index: -1;
+		width: 100%;
+		height: 13.125em;
+		position: relative;
+		background: url(img-mobile/header-image-mobile.jpg)  top center no-repeat;
+		background-size: 100%;
+	}
+	.first div.container,.second div.container,
+	.third div.container,.fifth  div.container,
+	.sixth  div.container, .seventh  div.container{
+		max-width: 340px;
+		margin: 0 auto;
+		padding:0.875em 1.25em 0em; 
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.first div.text{
+		margin-top: 17.6%;
+		margin-bottom: 13%;
+		padding: 0.875em;
+		background: rgba(0, 127, 255, .75);
+		align-self: flex-end;
+	}
+	.first div.text h2{
+		font: 1.5em RobotoBold, arial, sans-serif;
+		color:white;
+	}
+	.first div.text p{
+		font:1em RobotoLight, arial, sans-serif;
+		color:white;
+	}
+	.first  div.container button{
+		display: none;
+	}
+	.second{
+		background: #fff;
+	}
+	.second h2, .third h2, .fourth  h2,
+	.fifth  h2, .sixth  h2, .seventh h2{
+		font:2.25em RobotoLight, arial, sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+		color:#363636;
+	}
+	.pulse{
+		width: 10.6875em;
+		height: 0.875em;
+		margin: 0.4em auto 0.9em;
+		background: url(img-mobile/pulse-mobile.png) 0 0 no-repeat;
+	}
+	.second div.container div.text,
+	.third div.container div.text,
+	.sixth div.container div.text{
+		margin-bottom: 0em;
+		background: #3e9eff;
+	}
+	.second div.container div.text p,
+	.sixth div.container div.text p{
+		margin: 0.8em 0.625em;
+		font:0.875em RobotoBold, arial, sans-serif;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		color:#fff;
+	}
+	.second div.container div.text p:first-child,
+	.sixth div.container div.text p:first-child{
+		margin: 1.3em 0.625em 0em;
+		padding-bottom: 1.125em;
+		border-bottom: 1px solid #fff;
+	}
+	.second div.container div.text p:last-child:after{
+		content:" Lorem Ipsum has been the industry's standard dummy";
+	}
+	.second div.container div:nth-of-type(3),
+	.second div.container div:nth-of-type(4),
+	.second div.container div:nth-of-type(5){
+		border-bottom: 1px solid #dcdcdc;
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.second div.container div:nth-of-type(5){
+		border-bottom: none;
+	}
+	.second div.container div:nth-of-type(3){
+		padding: 1.1em 0em 0.65em;
+	}
+	.second div.container div:nth-of-type(4),
+	.second div.container div:nth-of-type(5){
+		padding: 0em 0em 0em;
+	}
+	.second div.container div:nth-of-type(5){
+		border-bottom: none;
+	}
+	 .second div.image-one{
+	 	display: block;
+	 	width: 12.9375em;
+	 	height: 4.8125em;
+	 	margin-top: 0.5em;
+		background: url(img-mobile/tablets-mobile.png) center center no-repeat;
+		background-size: 100%;
+	}
+	.second div.image-two{
+		display: block;
+		width: 10.375em;
+	 	height: 7.375em;
+	 	margin: 0.5em;
+		background: url(img-mobile/pazl-mobile.jpg) center center no-repeat;
+		background-size: auto;
+		order:-1;
+	}
+	 .second div.image-three{
+	 	display: block;
+	 	width: 11.8125em;
+	 	height: 8.0625em;
+	 	margin: 0.8em auto 0.45em;
+		background: url(img-mobile/cloude-mobile.jpg) center center no-repeat;
+		background-size: 100%;
+	}
+	.second div.container div:nth-of-type(3) p,
+	.second div.container div:nth-of-type(4) p,
+	.second div.container div:nth-of-type(5) p{
+		font:1.125em RobotoMedium, arial, sans-serif;
+		line-height: 1.125em;
+		text-transform: uppercase;
+		text-align: center;
+		color:#000;
+		flex:1 1 250px;
+	}
+	.second div.container div:nth-of-type(3) p{
+		padding: 1.05em 1.9em 0.55em;
+	}
+	.second div.container div:nth-of-type(4) p,
+	.second div.container div:nth-of-type(5) p{
+		padding: 0.05em 1.9em 1.35em;
+	}
+	.second div.container div:nth-of-type(3) p:after,
+	.second div.container div:nth-of-type(4) p:after,
+	.second div.container div:nth-of-type(5) p:after{
+		content: '';
+	}
+	.third{
+		padding-top: 0.6em;
+		background: #f6f8fb;
+	}
+	.third div.container{
+		background: url(img-mobile/border-mobile.png) 50% 93.7% no-repeat;
+	}
+	.third div.container div.text{
+		margin-left: 0em;
+		margin-right: 0em;
+	}
+	.third div.container div.text p{
+		margin: 2em 0.5em 1.7em;
+		font:0.875em RobotoBold, arial, sans-serif;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		color:#fff;
+	}
+	.third div.container div.text p:after{
+		content: " Lorem Ipsum has been the industry's standard dummy";
+	}
+	.third div.container-second{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around; 
+		align-items: center;
+		margin-top: 1.2em;
+		margin-bottom: 6.25em;   
+		width: 100%;
+		height: 33.875em; 
+		background:none;
+		padding-bottom: 0%;
+	}
+	.third div.element-one,
+	.third div.element-two,
+	.third div.element-three,
+	.third div.element-four,
+	.third div.element-five,
+	.third div.element-six{
+		position:static;
+	 	width: 6.375em;
+		height: 6.375em;
+		transform: rotate(45deg);
+	}
+	.third button{
+		border: transparent;
+		width: 100%;
+		height: 100%;
+		overflow: visible;
+		transform: rotate(-90deg);
+		position: relative;
+	}
+	.third button.one{
+		background: url(img-mobile/one-mobile.png) 0 0 no-repeat;
+	}
+	.third button.two{
+		background: url(img-mobile/two-mobile.png) 0 0 no-repeat;
+	}
+	.third button.three{
+		background: url(img-mobile/three-mobile.png) 0 0 no-repeat;
+	}
+	.third button.four{
+		background: url(img-mobile/four-mobile.png) 0 0 no-repeat;
+	}
+	.third button.five{
+		background: url(img-mobile/five-mobile.png) 0 0 no-repeat;
+	}
+	.third button.six{
+		background: url(img-mobile/six-mobile.png) 0 0 no-repeat;
+	}
+	.third button.one:hover{
+		background: url(img-mobile/one-mobile.png) 0 0 no-repeat;
+	}
+	.third button.two:hover{
+		background: url(img-mobile/two-mobile.png) 0 0 no-repeat;
+	}
+	.third button.three:hover{
+		background: url(img-mobile/three-mobile.png) 0 0 no-repeat;
+	}
+	.third button.four:hover{
+		background: url(img-mobile/four-mobile.png) 0 0 no-repeat;
+	}
+	.third button.five:hover{
+		background: url(img-mobile/five-mobile.png) 0 0 no-repeat;
+	}
+	.third button.six:hover{
+		background: url(img-mobile/six-mobile.png) 0 0 no-repeat;
+	}
+	.third button span{
+		position: absolute;
+		top:3.45em;
+		left:-0.6em;
+		font:1.5em RobotoMedium, arial, sans-serif;
+		text-transform: uppercase;
+		color: #444;
+		transform: rotate(45deg);
+	}
+	.fourth, .fifth, .sixth{
+		display: none;
+	}
+	.seventh{
+		margin-top:-0.5em;
+		background: url(img-mobile/city-mobile.jpg) 0 -1em no-repeat;
+		background-size: cover; 
+	}
+	.seventh div.form-wrapper{
+		width: 100%;
+		margin: 0.9em auto 10px;
+		
+	}
+	.seventh h3{
+		font: 1.75em RobotoBold, arial, sans-serif;
+		text-align: center;
+	}
+	.seventh p{
+		padding:1em 0em 0.3em;
+		font: 1.125em Robotomedium, arial, sans-serif;
+		text-align: center;
+	}
+	.seventh div.container  p:nth-of-type(1):after{
+		content:'';
+	}
+	.seventh div.container p:nth-of-type(2):after{
+		content:'Lorem Ipsum is simply dummy text of';
+		display: block;
+		top:100%;
+		width: 11em;
+	}
+	.seventh div.column{
+		padding-top: 2.3em;
+	}
+	.seventh div.left{
+		height: 2.5em; 
+		padding-bottom: 10em;
+	}
+	.seventh div.left h3{
+		margin: 0em 0em 0em -1em;
+		padding-left: 0em;
+		font-size: 1.6em;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.seventh div.left h3:after{
+		content:'';
+	}
+	.seventh div.map{
+		top:-23%;
+		left:1%; 
+		width: 16.25em;
+		height: 11.125em;
+		background: url(img-mobile/estonia-mobile.png) center top no-repeat;
+	}
+	.seventh form{
+		margin: 0.2em 0em 0em;
+	}
+	.seventh form input{
+		width: 92%;
+		height: 2.6em;
+		margin-left: 4%;
+		margin-bottom: 1.85em;
+		border: 1px solid #525252;
+		background: transparent;
+		font: 1.125em RobotoBlack, arial, sans-serif;
+		text-transform: uppercase;
+		color:#373737;
+	}
+	::-webkit-input-placeholder {
+		color:#373737;
+	}
+	.seventh form input:nth-of-type(3){
+		margin-bottom: 1.85em; 
+	}
+	.seventh form div.checkbox{
+		width: 100%;
+		margin-bottom: 0em;
+		padding: 0em 0em 2em 0em;
+	}
+	.seventh div.checkbox label{
+		display: block;
+		width: 3.7em;
+		height: 3.75em;
+		margin: 0 auto 1.5em;
+		position: relative;
+	}
+	.seventh form input.checkbox{
+		top:0;
+		width: 100%;
+		height: 100%;
+		padding: 0em;
+		opacity: 0; 
+	}
+	.seventh form div.checkbox label > span{
+		position: absolute;
+		top:0;
+		left:0;
+		width: 2em;
+		height: 2em;
+		background: url(img-mobile/checkbox-unchecked-mobile.png) 0 0 no-repeat;
+	}
+	.seventh form input.checkbox:checked + span{
+		background: url(img-mobile/checkbox-checked-mobile.png) 0 0 no-repeat;
+	}
+	.seventh form div.checkbox span{
+		display: block;
+		width: 101%;
+		padding-right: 0em;
+		font: 1.87em RobotoMedium, arial, sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.seventh form div.checkbox > span:after{
+		content:' text';
+	}
+	.seventh form button{
+		display: block;
+		width: 9em;
+		height: 2em;
+		margin: 0 auto 1.3em;
+		border: none;
+		background: #3b9cfe;
+		font: 1.5em RobotoBold, arial, sans-serif;
+		text-transform: uppercase;
+		color:#fff;
+	}
+	.seventh .button{
+		width: 100%;
+		/* height: 50px; */
+	}
+	.seventh  div.social-network button{
+		width: 3.3em;
+		height: 3.3em;
+		border:none;
+		margin: 0 0.3em;
+	}
+	.seventh div.social-network{
+		margin-bottom: 3em;
+	}
+	.seventh button.facebook{
+		background: url(img-mobile/facebook-mobile.png) 0 0 no-repeat;
+	}
+	.seventh button.twitter{
+		background: url(img-mobile/twitter-mobile.png) 0 0 no-repeat;
+	}
+	.seventh button.google{
+		background: url(img-mobile/google-mobile.png) 0 0 no-repeat;
+	}
+	.seventh button.linkedin{
+		background: url(img-mobile/linkedin-mobile.png) 0 0 no-repeat;
+	}
+	.seventh button.skynetwork{
+		background: url(img-mobile/skynetwork-mobile.png) 0 0 no-repeat;
+	}
+	footer{
+		width: 100%;
+		height: 48px;
+		padding: 0.8em;
+		background:#363636;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+	}
+	footer p{
+		font:0.75em RobotoLight,arial,sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+		color: white;
+	}
+	footer p:before{
+		content:'Lorem Ipsum is simply dummy text of the printing and typesetting ';
+	}
+	footer button{
+		background: none;
+		border: none;
+		font:0.75em RobotoLight,arial,sans-serif;
+		text-transform: lowercase;
+		text-decoration: underline;
+		color:#1a68e9;
+	}
+	footer button:after{
+		content: ' industry.'
+	}
+}
